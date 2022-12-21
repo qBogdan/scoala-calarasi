@@ -1,0 +1,46 @@
+.carousel {
+    width: 100%;
+    height: 25rem;
+    position:  relative;
+}
+
+.carouselPictures {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cImg {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+}
+
+.activeImg {
+    opacity: 1;
+}
+
+.topInfo {
+    position: absolute;
+    display: flex;
+    gap: 2rem;
+    color: var(--cool2);
+    padding: .5rem;
+    padding-left: 2rem;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background: rgb(88,38,48);
+background: linear-gradient(180deg, rgba(88,38,48,1) 0%, rgba(255,0,0,0.054125873982405426) 92%, rgba(255,0,0,0) 100%);
+}
+
+.topInfo a {
+    color: var(--cool2);
+    text-decoration: none;
+}

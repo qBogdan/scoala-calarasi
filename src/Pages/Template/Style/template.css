@@ -1,0 +1,108 @@
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --warm1: #582630ff;
+    --warm2: #932a4eff;
+    --warm3: #e79288ff;
+    --cool1: #333a42ff;
+    --cool2: #c7dbd4ff;
+}
+
+.App {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    width: 100%;
+}
+.nav {
+    width: 100%;
+    height: 4rem;
+    display:  flex;
+    background-color: var(--warm1);
+    
+}
+
+.logo {
+    background-color: rgb(95, 161, 212);
+    width: 10rem;
+    aspect-ratio: 1;
+}
+
+
+.btnWrapper {
+    flex: 1;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBtn {
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+.navBtn:hover {
+    background-color: var(--warm2);
+}
+
+.navLink {
+    color: var(--cool2);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink:hover {
+    color: white;
+}
+
+.dropMenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background-color: var(--warm3);
+    display: flex;
+    flex-direction: column;
+}
+
+.dropBtn {
+    color: var(--warm1);
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 225, 225, 0.54);
+}
+
+.dropBtn:hover {
+    background-color: var(--warm1);
+    color: white;
+}
+
+
+
+.body {
+    flex: 1;
+}
+
+footer {
+    height: 4rem;
+    background-color: var(--warm1);
+    text-align: center;
+    color: var(--warm3);
+    padding: 1rem;
+}
