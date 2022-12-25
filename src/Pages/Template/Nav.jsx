@@ -2,20 +2,31 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Nav() {
+    const [activeLink, setActiveLink] = useState("/");
+
     return (
         <div className="nav">
-            <div className="logo"></div>
+            <div className="logo">
+                <Link
+                    to={"/"}
+                    onClick={() => {
+                        setActiveLink("/");
+                    }}
+                >
+                    <img src="./Media/logo.svg" alt="" />
+                </Link>
+            </div>
             <div className="btnWrapper">
-                <NavBtn title="Acasa" link="/" />
-                <NavBtn title="Despre noi" link="istorie">
+                <NavBtn activeLink={activeLink} setActiveLink={setActiveLink} title="Acasa" link="/" />
+                <NavBtn activeLink={activeLink} setActiveLink={setActiveLink} title="Despre noi" link="istorie">
                     <Link className="dropBtn" to="istorie">
-                        Istorie
+                        Istoric
                     </Link>
                     <Link className="dropBtn" to="resurse-umane">
                         Resurse umane
                     </Link>
                 </NavBtn>
-                <NavBtn title="Activitati" link="activitati">
+                <NavBtn activeLink={activeLink} setActiveLink={setActiveLink} title="Activitati" link="activitati">
                     <Link className="dropBtn" to="activitati">
                         Activitati
                     </Link>
@@ -23,7 +34,7 @@ function Nav() {
                         Proiecte
                     </Link>
                 </NavBtn>
-                <NavBtn title="Documente" link="documente-utile">
+                <NavBtn activeLink={activeLink} setActiveLink={setActiveLink} title="Documente" link="documente-utile">
                     <Link className="dropBtn" to="documente-utile">
                         Documente utile
                     </Link>
@@ -31,13 +42,13 @@ function Nav() {
                         Orar
                     </Link>
                 </NavBtn>
-                <NavBtn title="Contact" link="contact" />
+                <NavBtn activeLink={activeLink} setActiveLink={setActiveLink} title="Contact" link="contact" />
             </div>
         </div>
     );
 }
 
-const NavBtn = ({ title, link, children }) => {
+const NavBtn = ({ title, link, children, setActiveLink, activeLink }) => {
     const [isDropped, setIsDropped] = useState(false);
 
     return (
@@ -49,8 +60,11 @@ const NavBtn = ({ title, link, children }) => {
             onMouseLeave={() => {
                 setIsDropped(false);
             }}
+            onClick={() => {
+                setActiveLink(link);
+            }}
         >
-            <Link className="navLink" to={link}>
+            <Link className={activeLink === link ? "navLink activeNavLink" : "navLink"} to={link}>
                 {title}
             </Link>
             {children && isDropped ? <div className="dropMenu">{children}</div> : null}

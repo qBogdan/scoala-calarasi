@@ -1,0 +1,113 @@
+.title {
+    font-family: 'Cinzel Decorative';
+    color: var(--red);
+    border-bottom: 5px solid var(--red);
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin-bottom: 2rem;
+ }
+ 
+ .paragraph {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+}
+.paragraph p {
+    text-indent: 3rem;
+    padding: 1rem;
+}
+.paragraph img {
+    height: 20rem;
+    aspect-ratio: 1;
+    background-color: var(--red);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+}
+
+.profilePicture {
+    height: 8rem;
+    box-shadow: 0 0 3px;
+}
+
+.profesorInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profesorCard {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: white;
+    box-shadow: 0 0 2px;
+    gap: 2rem;
+    align-items:stretch;
+    transition: .3s;
+}
+
+.profesorCard:hover {
+    box-shadow: 0 0 4px;
+    transform: scale(1.02);
+    border: 5px solid var(--red);
+}
+
+.profesorCard:first-child {
+    background-color: rgb(127, 246, 255);
+}
+
+.profesorCard .contact, .phone, .email {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.profesorCard .contact {
+    gap: 2rem;
+}
+
+
+.profesorCard .contact img {
+    height: 2rem;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .istoric .title, .profesori .title {
+        font-size: 2rem;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .paragraph p {
+        text-indent: unset;
+    }
+
+    .profesorCard img {
+        height: 5rem;
+    }
+
+    .profesorCard h1 {
+        font-size: 1.5rem;
+    }
+    .profesorCard h2 {
+        font-size: 1.3rem;
+    }
+
+    .profesorCard .contact {
+        gap: 1rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .profesori {
+        padding: .5rem;
+    }
+}

@@ -16,15 +16,16 @@ function Carousel() {
     return (
         <div className="carousel">
             <div className="topInfo">
-                <h3>Tel: 0744 444 444</h3>
-                <h3>E-mail: sc.calarsi@gmai.com</h3>
-                <a href="https://www.facebook.com/Școala-Gimnazială-Nr1-Călărași-Botoșani-135362940443812">
+                {/* <img src="./Media/phoneIcon.svg" alt="" /> <h3>Tel: 0744 444 444</h3> */}
+                <img src="./Media/mailIcon.svg" alt="" /> <h3>E-mail: scoala_calarasi_jud_bt@yahoo.com</h3>
+                <a target="_blank" href="https://www.facebook.com/Școala-Gimnazială-Nr1-Călărași-Botoșani-135362940443812">
+                    <img src="./Media/facebookIcon.svg" alt="" />
                     <h3>Facebook</h3>
                 </a>
             </div>
             <div className="carouselPictures">
                 {Array.from({ length: 5 }).map((image, index) => {
-                    return <img key={index} className={imgIndex === index + 1 ? "activeImg cImg" : "cImg"} src={`./Media/${index + 1}.jpg`} alt="" />;
+                    return <img key={index} className={imgIndex === index + 1 ? "activeImg cImg" : "cImg"} src={`./Media/${index + 1}.png`} alt="" />;
                 })}
             </div>
         </div>

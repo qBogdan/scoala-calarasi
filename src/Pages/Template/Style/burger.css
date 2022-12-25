@@ -1,0 +1,30 @@
+.burger {
+    height: 1rem;
+    width: 100%;
+    z-index: 1000;
+}
+
+.burgerMenu {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.burgerLink {
+    padding: .5rem;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid var(--red);
+}
+
+.burgerButton {
+    padding: 1rem;
+    color: white;
+    background-color: var(--warm1);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}

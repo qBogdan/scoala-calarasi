@@ -1,0 +1,117 @@
+.title {
+   font-family: 'Cinzel Decorative';
+   color: var(--red);
+   border-bottom: 5px solid var(--red);
+   font-size: 3.5rem;
+   font-weight: 700;
+   padding: 1rem;
+   margin-bottom: 2rem;
+}
+
+.text-picture-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-picture-card:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.text-picture-card img {
+    height: 15rem;
+    aspect-ratio: 1;
+    background-color: royalblue;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+}
+
+.acasa ul{
+    padding: 0 4rem;
+    font-size: 2rem;
+    color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.table {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.tableRow,
+.tableHead {
+    display: flex;
+    padding: .4rem;
+    gap: .5rem;
+}
+
+.tableRow {
+    transition: .4s;
+    border-radius: .5rem;
+}
+
+.tableRow:hover {
+    background-color: var(--red);
+}
+
+.tableRow .cell {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    font-weight: 600;
+}
+
+.tableRow .cell p {
+    margin-top: .5rem;
+    border-top: 2px solid var(--red);
+    padding: .2rem;
+}
+
+.tableHead .cell {
+    background-color: var(--warm1);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.cell {
+    flex: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .acasa {
+        padding: 1rem;
+    }
+   
+    .acasa .title {
+        font-size: 2rem;
+    }
+
+   .acasa .text-picture-card {
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+
+    .acasa ul li {
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+
+    .table .tableRow, .table .tableHead {
+        flex-direction: column;
+    }
+}

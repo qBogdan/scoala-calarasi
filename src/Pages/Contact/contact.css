@@ -1,0 +1,71 @@
+.contact a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.contact {
+    margin-top: 2rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contact h1 {
+    font-family: 'Cinzel Decorative';
+   color: var(--red);
+   border-bottom: 5px solid var(--red);
+   font-size: 2.5rem;
+   font-weight: 700;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.gmap {
+    flex: 1;
+    height: 30rem;
+    background-color: red;
+}
+.contact .row {
+    display:  flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact .row .icon {
+    height: 3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact {
+        padding: 1rem;
+        flex-direction: column-reverse;
+    
+    }
+
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+
+    .contact h2 {
+        font-size: 1rem;
+    }
+
+    .contact .contactInfo {
+        align-items: flex-start;
+
+    }
+
+    .contactInfo .icon {
+        width: 2rem;
+    }
+    
+
+    .contact img {
+        width: 100%;
+    }
+}
