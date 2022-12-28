@@ -4,7 +4,7 @@ import "./acasa.css";
 function Acasa() {
     return (
         <div className="acasa">
-            <h1 className="title">Viziunea Școlii</h1>
+            <h1 className="title">Viziunea școlii</h1>
             <div className="text-picture-card">
                 <img src="./Media/Acasa/kids1.png" alt="" />
                 <p>
@@ -28,7 +28,7 @@ function Acasa() {
                     relationare si comunicare pentru orice persoana si asigura conditiile prielnice pentru petrecerea placuta a timpului liber{" "}
                 </p>
             </div>
-            <h1 className="title">Ținte Strategice</h1>
+            <h1 className="title">Ținte strategice</h1>
             <ul>
                 <li>Dezvoltarea profesionala a cadrelor didactice si cresterea calitatii actului educational</li>
                 <li>Cresterea ofertei de activitati extracurriculare si a ofertei de petrecere a timpului liber</li>

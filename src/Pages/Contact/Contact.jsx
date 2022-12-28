@@ -6,7 +6,7 @@ function Contact() {
         <div className="contact">
             <img src="./Media/scoala.png" alt="" className="gmap" />
             <div className="contactInfo">
-                <h1>Școala GimnazialĂ nr.1 CĂlĂraȘi</h1>
+                <h1>Școala Gimnazială nr.1 Călărași</h1>
                 <div className="row">
                     <img className="icon" src="./Media/adressIcon.svg" alt="" />
                     <h2>Str. Principală, Loc. Călărași, Jud. Botoșani</h2>

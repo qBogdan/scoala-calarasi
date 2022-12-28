@@ -11,11 +11,13 @@
 }
 
 .contact h1 {
-    font-family: 'Cinzel Decorative';
-   color: var(--red);
-   border-bottom: 5px solid var(--red);
-   font-size: 2.5rem;
-   font-weight: 700;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: var(--red);
+    border-bottom: 5px solid var(--red);
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .contactInfo {

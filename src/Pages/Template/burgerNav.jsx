@@ -13,7 +13,11 @@ function BurgerNav() {
                     setIsOpen(old => !old);
                 }}
             >
-                Meniu
+                <h3 style={{ marginLeft: "2rem" }}>Meniu</h3>
+                <div className="burgerIcon">
+                    <div className={isOpen ? "line" : "linePlus line"}></div>
+                    <div className={isOpen ? "line" : "line2Plus line"}></div>
+                </div>
             </div>
             <div className="burgerMenu" style={{ height: isOpen ? "auto" : "0" }}>
                 <ButtonLink link="/" name="Acasa" setIsOpen={setIsOpen} />

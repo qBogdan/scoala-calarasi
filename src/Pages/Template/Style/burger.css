@@ -8,16 +8,59 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: .5s;
+    transition: .5s linear;
 }
 
+.burgerButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.burgerIcon {
+    height: 2rem;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.burgerIcon .line {
+    height: 6px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 1rem;
+    border-radius: 99px;
+    transition: .3s linear;
+    transform: rotate(180deg);
+}
+
+.burgerIcon .linePlus {
+   transform:  rotate(270deg);
+}
+
+.burgerIcon .line2Plus {
+    transform: rotate(0);
+}
+
+
+
+
 .burgerLink {
-    padding: .5rem;
     text-align: center;
     background-color: white;
     text-decoration: none;
     font-weight: bold;
     border-bottom: 1px solid var(--red);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.burgerLink a{
+    color: var(--warm1);
+text-decoration: none;
+height: 100%;
+display: inline-block;
+padding: .5rem;
 }
 
 .burgerButton {

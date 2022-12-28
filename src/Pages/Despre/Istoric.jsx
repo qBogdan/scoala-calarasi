@@ -75,7 +75,7 @@ function Istoric() {
                 </div>
                 <img src="" alt="" />
             </div>
-            <h1 className="title">Satul PleȘani</h1>
+            <h1 className="title">Satul Pleșani</h1>
             <div className="paragraph">
                 <img src="" alt="" />
                 <p>
