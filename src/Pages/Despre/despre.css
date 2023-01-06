@@ -28,7 +28,10 @@
 .profesorInfo {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.profesorInfo .contact {
+    margin-top: 1rem;
 }
 .profesorCard {
     display: flex;
