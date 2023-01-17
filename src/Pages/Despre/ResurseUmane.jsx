@@ -197,8 +197,8 @@ const listaProfesori = [
     {
         nume: "Daniela Mihaela Radeș ",
         functie: "Educatoare",
-        email: "",
-        img: "",
+        email: "danielarades286@gmail.com",
+        img: "radesD",
         telefon: null,
     },
     {
@@ -239,8 +239,8 @@ const listaProfesori = [
     {
         nume: "Carmen Adina Ghițun",
         functie: "Consilier școlar",
-        email: "",
-        img: "",
+        email: "cghitun@yahoo.com",
+        img: "carmen",
         telefon: null,
     },
     {

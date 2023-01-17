@@ -70,7 +70,7 @@
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width:700px) {
     .istoric .title, .profesori .title {
         font-size: 2rem;
     }

@@ -26,14 +26,7 @@ function Nav() {
                         Resurse umane
                     </Link>
                 </NavBtn>
-                <NavBtn activeLink={activeLink} setActiveLink={setActiveLink} title="Activitati" link="activitati">
-                    <Link className="dropBtn" to="activitati">
-                        Activitati
-                    </Link>
-                    <Link className="dropBtn" to="proiecte">
-                        Proiecte
-                    </Link>
-                </NavBtn>
+                <NavBtn activeLink={activeLink} setActiveLink={setActiveLink} title="Activitati" link="activitati"></NavBtn>
                 <NavBtn activeLink={activeLink} setActiveLink={setActiveLink} title="Documente" link="documente-utile">
                     <Link className="dropBtn" to="documente-utile">
                         Documente utile

@@ -24,7 +24,6 @@ function BurgerNav() {
                 <ButtonLink link="istorie" name="Istoric" setIsOpen={setIsOpen} />
                 <ButtonLink link="resurse-umane" name="Resurse umane" setIsOpen={setIsOpen} />
                 <ButtonLink link="activitati" name="Activitati" setIsOpen={setIsOpen} />
-                <ButtonLink link="proiecte" name="Proiecte" setIsOpen={setIsOpen} />
                 <ButtonLink link="documente-utile" name="Documente utile" setIsOpen={setIsOpen} />
                 <ButtonLink link="orar" name="Orar" setIsOpen={setIsOpen} />
                 <ButtonLink link="contact" name="Contact" setIsOpen={setIsOpen} />

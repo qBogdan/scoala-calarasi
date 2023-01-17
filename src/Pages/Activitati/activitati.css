@@ -1,0 +1,65 @@
+.activitiesGallery {
+   
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: var(--red);
+    border-bottom: 5px solid var(--red);
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin-bottom: 2rem;
+ }
+
+ p {
+    text-indent: 4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+ .activityPictures {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .activityPictures img {
+    height: clamp(10rem, 15rem, 25rem);
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    transition: .3s ease-out;
+}
+
+.activityPictures img:hover {
+    transform: scale(1.5);
+    z-index: 100;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+.backButton {
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    background-color: var(--red);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+.backButton:hover {
+    background-color: var(--warm1);
+    transform: scale(1.05);
+}

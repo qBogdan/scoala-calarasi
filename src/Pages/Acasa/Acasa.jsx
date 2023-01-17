@@ -39,7 +39,6 @@ function Acasa() {
                     strategice, în vederea dezvoltării şi modernizării instituţionale a Şcolii Gimnaziale nr.1 Călărași în perioada 2021-2025:
                 </p>
             </div>
-
             <TinteStategice />
             <a className="downloadBtn" href="./Data/PDI-2021-2025.pdf" download="PDI-2021-2025.pdf">
                 Descarcă Proiect de Dezvoltare Instituțională

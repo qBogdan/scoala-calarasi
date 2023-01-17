@@ -14,14 +14,13 @@ function Header() {
     }, []);
     const updateDimensions = () => {
         const width = window.innerWidth;
-        console.log(width);
         setWindowWidth(width);
     };
 
     return (
         <div className="header">
             <Carousel />
-            {width > 1000 ? <Nav /> : <BurgerNav />}
+            {width > 700 ? <Nav /> : <BurgerNav />}
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./Pages/Template/Header";
 import Footer from "./Pages/Template/Footer";
@@ -11,21 +11,24 @@ import DocumenteUtile from "./Pages/Documente/DocumenteUtile";
 import Orar from "./Pages/Documente/Orar";
 import Activitati from "./Pages/Activitati/Activitati";
 import Proiecte from "./Pages/Activitati/Proiecte";
-
+import ActivityProject from "./Pages/Activitati/components/ActivityProject";
 function App() {
+    const [activity, setActivity] = useState({});
+
     return (
         <div className="App">
             <Header />
             <div className="body">
                 <Routes>
                     <Route path="/" element={<Acasa />} />
-                    <Route path="/activitati" element={<Activitati />} />
+                    <Route path="/activitati" element={<Activitati setActivity={setActivity} />} />
                     <Route path="/proiecte" element={<Proiecte />} />
                     <Route path="/istorie" element={<Istoric />} />
                     <Route path="/resurse-umane" element={<ResurseUmane />} />
                     <Route path="/documente-utile" element={<DocumenteUtile />} />
                     <Route path="/orar" element={<Orar />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/activitate" element={<ActivityProject activity={activity} />} />
                 </Routes>
             </div>
             <Footer />
