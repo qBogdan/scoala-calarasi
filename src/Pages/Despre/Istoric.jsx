@@ -73,11 +73,11 @@ function Istoric() {
                         localitatea Libertatea este un nou local de scoala construit prin Banca Mondiala in care functioneaza si gradinita de copii.
                     </p>
                 </div>
-                <img src="" alt="" />
+                {/* <img src="" alt="" /> */}
             </div>
             <h1 className="title">Satul Pleșani</h1>
             <div className="paragraph">
-                <img src="" alt="" />
+                {/* <img src="" alt="" /> */}
                 <p>
                     In satul Plesani prima scoala a luat fiinta in anul 1925,intr-un local inchiriat,invatator fiind V.Pavlescu.In anul 1960 a fost
                     dat in folosinta un nou local de scoala. Ca urmare a cresterii numarului de elevi,dar si a trecerii la invatamantul bligatoriu de

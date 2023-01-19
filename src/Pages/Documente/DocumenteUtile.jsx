@@ -1,7 +1,7 @@
 import React from "react";
 
 function DocumenteUtile() {
-    return <div>DocumenteUtile</div>;
+    return <div className="documenteWidnow"></div>;
 }
 
 export default DocumenteUtile;

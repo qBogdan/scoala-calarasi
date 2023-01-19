@@ -152,7 +152,7 @@
 
 .downloadBtn:hover {
     scale: 1.02;
-    background-color: rgb(141, 71, 71);
+    background-color:var(--warm1);
 }
 
 @media only screen and (max-width: 1500px) {
