@@ -265,3 +265,13 @@ const listaProfesori = [
         telefon: null,
     },
 ];
+
+// function insertQuery(array) {
+//     let q;
+//     array.forEach(point => {
+//         q += `INSERT INTO \`resurseUmane\` (\`nume\`,\`functie\`,\`email\`,\`img\`,\`telefon\`) VALUES ('${point.nume}' , '${point.functie}','${
+//             point.email
+//         }','${point.img}','${point.telefon == null ? "" : point.telefon}'); `;
+//     });
+//     return q;
+// }
